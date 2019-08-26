@@ -242,3 +242,15 @@ def long_name_steals_a_ton?
   end
   return (temp[:name] == player_with_longest_name ? true : false)
 end
+ instructors = [
+   {name: 'noa', hometown: 'detroit', mood: 'excited'},
+   {name: 'jess', hometown: 'connecticut'},
+   {name: 'derick', hometown: 'arlington heights'},
+   ]
+def get_names(instructors)
+  instructors.map do |hash|
+    hash[:name]
+  end
+end
+
+puts get_names(instructors)
